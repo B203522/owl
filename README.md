@@ -4,8 +4,11 @@
 OpenAI API を用いた OWLClient クライアントライブラリのサンプルプロジェクト。
 
 ## セットアップ
-```bash
-conda create -n owl python=3.10 -y
-conda activate owl
+**Windows (venv)**
+```powershell
+# プロジェクトルートで
+python -m venv .venv      # 仮想環境の作成
+.\.venv\Scripts\Activate  # 仮想環境の有効化
+pip install --upgrade pip
 pip install -r requirements.txt
-pip install -e .
+pip install -e .# Owl AI アプリ
